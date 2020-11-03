@@ -3,65 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <style type="text/css">
-        #tamanhoContainer {
-            width: 500px;
-        }
-
-        #botao {
-            background-color: #FF1168;
-            color: #ffffff;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
-    
-    <div class="container" id="tamanhoContainer" style="margin-top: 40px">
-        <h4>Formulário de Cadastro</h4>
-        <form action="inserir_produto.php" method="post" style="margin-top: 20px">
-            <div class="form-group">
-                <label>Número Produto</label>
-                <input type="number" class="form-control" name="nroproduto" placeholder="Insira o numero do produto">
+    <div class="container" style="margin-top: 100px">
+            <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Adicionar Produto</h5>
+                <p class="card-text">Opção para adicionar produtos em nosso estoque.</p>
+                <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar Produto</a>
             </div>
-            <div class="form-group">
-                <label>Nome Produto</label>
-                <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o nome do produto" autocomplete="off" required>
             </div>
-            <div class="form-group">
-                <label>Categoria</label>
-                <select class="form-control" name="categoria">
-                <option>Periféricos</option>
-                <option>Hardware</option>
-                <option>Software</option>
-                <option>Celulares</option>
-                </select>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Listar de Produtos</h5>
+                <p class="card-text">Visualizar, editar e excluir os produtos da lista.</p>
+                <a href="listar_produtos.php" class="btn btn-primary">Produtos</a>
             </div>
-            <div class="form-group">
-                <label>Quantidade</label>
-                <input type="number" name="quantidade" class="form-control" placeholder="Insira a quantidade de produtos" autocomplete="off" required>
             </div>
-            <div class="form-group">
-                <label>Fornecedor</label>
-                <select class="form-control" name="fornecedor">
-                <option>Fornecedor A</option>
-                <option>Fornecedor B</option>
-                <option>Fornecedor C</option>
-                </select>
-            </div>
-            <div style="text-align: right;">
-                <button type="submit" id="botao"class="btn btn-sm">Cadastrar</button>
-            </div>
-            
-        </form>    
+        </div>
+        </div>
     </div>
-    
-    
 
-
-
-<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
