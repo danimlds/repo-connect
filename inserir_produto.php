@@ -13,3 +13,10 @@ $sql = "INSERT INTO `estoque`(`nroproduto`, `nomeproduto`, `categoria`, `quantid
 $inserir = mysqli_query($conexao, $sql);
 
 ?>
+<link rel="stylesheet" href="css/bootstrap.css">
+<div class="container" style="width: 500px; margin-top: 20px">
+    <h4>Produto adicionado com sucesso!</h4>
+    <div style="padding-top: 20px">
+         <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo Ítem</a>
+    </div>
+</div>
